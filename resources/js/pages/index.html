@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Paragraph Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: flex-start; /* aligns left */
+    align-items: center;
+    height: 100vh;
+    padding-left: 50px; /* space from left */
+  }
+
+  .paragraph-3d {
+    font-size: 1.5rem;
+    color: #333;
+    max-width: 400px;
+    line-height: 1.6;
+    position: relative;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.1),
+                 6px 6px 0px rgba(0,0,0,0.05);
+    transform: perspective(500px) rotateY(-10deg);
+  }
+</style>
+</head>
+<body>
+  <p class="paragraph-3d">
+    Welcome to our website! This paragraph is styled to give a subtle 3D effect. 
+    It looks slightly tilted to the left, creating depth and a modern feel for your content. 
+    Perfect for landing pages or creative layouts!
+  </p>
+</body>
+</html>
